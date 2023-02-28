@@ -37,7 +37,7 @@ function Home() {
         let shortUrl = response.data.result.short_link;
 
         axios
-          .post("http://localhost:8000/create-url", {
+          .post("https://url-shortener-backend-tz69.onrender.com/create-url", {
             originalUrl: url,
             title: title,
             shortUrl: shortUrl,
